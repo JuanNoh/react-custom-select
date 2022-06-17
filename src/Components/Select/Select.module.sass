@@ -1,0 +1,49 @@
+.fromControl
+    position: relative
+    border: 1px solid #005CB8
+    border-radius: 4px
+    width: 100%
+    padding: 10px 10px
+    box-sizing: border-box
+    &:focus
+        box-shadow: 0 0 0 2px rgba(#005CB8, 0.2)
+    &:hover
+        box-shadow: 0 0 0 2px rgba(#005CB8, 0.2)
+.label
+    font-family: 'Roboto', sans-serif
+    color: #005CB8
+    font-size: 14px
+    font-weight: 900
+    letter-spacing: 0
+    margin: 0
+    padding-bottom: 9px
+    text-align: left
+
+.mySelect
+    position: relative
+    cursor: pointer
+    font-family: 'Roboto', sans-serif
+    .options
+        display: none
+        position: absolute
+        width: 100%
+        background-color: #FFFFFF
+        border-radius: 4px
+        box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d
+        transition: background .3s ease
+        cursor: pointer
+        z-index: 1
+        overflow-y: scroll
+        min-height: 29px
+        max-height: 200px
+        margin-top: 5px
+        .option
+            font-family: 'Roboto', sans-serif
+            padding: 5px 10px
+            &:hover
+                background-color: #005CB8
+                color: #FFFFFF
+                cursor: pointer
+                font-family: 'Roboto', sans-serif
+    .active
+        display: block
