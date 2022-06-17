@@ -1,5 +1,5 @@
 
-# Pokedex React
+# React Custom React
 
 
 Aplicación construida con ReactJS.
