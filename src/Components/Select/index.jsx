@@ -37,11 +37,15 @@ export default function MySelect({
         >
           <span>{value.id === 0 ? name : value.name}</span>
         </div>
-        <div className={`${style['options']} ${active ? style['active'] : ""}`}>
+        <div className={`${style["options"]} ${active ? style["active"] : ""}`}>
           {options.map((option) => {
             return (
               <div
-                className={style.option}
+                className={
+                  style.option +
+                  " " +
+                  (value.id === option.id ? style["selected"] : "")
+                }
                 key={option.id}
                 onClick={() => selectOption(option)}
               >
